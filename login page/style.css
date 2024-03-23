@@ -1,0 +1,144 @@
+@media only screen and (min-width: 900px) {
+    
+
+    body {
+        font-size: 14px;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(images/login-bg.png); width: 100%; height: 100%;
+    background-size: cover;
+}
+
+#workingarea{
+    display: flex;
+}
+
+.logo{
+    margin-top: 0px;
+    margin-left: 40px;
+    display: inline-block;
+    justify-content: left;
+}
+
+.heading{
+    display: inline-block;
+    justify-content: right ;
+    margin-left: 650px;
+    margin-top: 25px;
+    font-size: 50px;
+}
+
+#container{
+    display: flex;
+}
+p{ 
+    display: inline-block;
+    justify-content: left; 
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.loginbox {
+    align-self: right;
+    margin-left: 350px; /* Centering horizontally */
+    margin-top: 0px;
+    border: 2px solid white; /* Adding border with width, style, and color */
+    border-radius: 12px;
+    width: 500px; /* Adjust width as needed */
+    height: 500px;
+    padding: 20px; /* Adding some padding for better appearance */
+    position: relative; /* Position relative to allow absolute positioning of pseudo-element */
+}
+
+/* Pseudo-element for blurred background */
+.loginbox::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Adjust as needed to cover border */
+    right: -5px; /* Adjust as needed to cover border */
+    bottom: -5px; /* Adjust as needed to cover border */
+    left: -5px; /* Adjust as needed to cover border */
+    backdrop-filter: blur(10px); /* Adjust blur strength as needed */
+    z-index: -1; /* Ensure it's behind the content */
+    border-radius: 10px; /* Adjust as needed to match border radius */
+}
+#mail{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 55px;
+    border-radius: 20px;
+    width: 330px;
+    height: 55px;
+}
+
+#passw{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+    width: 330px;
+    height: 55px;
+}
+
+h1{
+    font-weight:900;
+    font-size: 40px;
+    margin-left: 140px;
+}
+
+.remember{
+    color: black;
+    font-size: 18px;
+}
+
+.forgot{
+    color: black;
+    font-size: 18px;
+    margin-left: 150px;
+}
+
+.login1{
+    display: flex;
+    border: 3px;
+    border-width: 3px;
+    border-color:rgb(55, 0, 128) ;
+    border-radius: 18px;
+    padding: 10px;
+    background-color: rgb(55, 0, 128);
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 120px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    height: 50px;
+    width: 200px;
+    color: black; 
+}
+
+#container2{
+    margin-left: 30px;
+display: flex;
+}
+
+.apple{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
